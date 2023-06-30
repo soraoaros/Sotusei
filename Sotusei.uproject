@@ -5,11 +5,11 @@
 	"Description": "",
 	"Plugins": [
 		{
-			"Name": "ApexDestruction",
+			"Name": "FieldSystemPlugin",
 			"Enabled": true
 		},
 		{
-			"Name": "FieldSystemPlugin",
+			"Name": "ApexDestruction",
 			"Enabled": true
 		}
 	]
