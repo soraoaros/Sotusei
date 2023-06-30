@@ -1,15 +1,15 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.27",
+	"EngineAssociation": "4.27Chaos",
 	"Category": "",
 	"Description": "",
 	"Plugins": [
 		{
-			"Name": "ApexDestruction",
+			"Name": "FieldSystemPlugin",
 			"Enabled": true
 		},
 		{
-			"Name": "FieldSystemPlugin",
+			"Name": "ApexDestruction",
 			"Enabled": true
 		}
 	]
