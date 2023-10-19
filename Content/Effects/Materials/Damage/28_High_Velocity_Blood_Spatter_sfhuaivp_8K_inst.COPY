@@ -1,0 +1,29 @@
+Begin Object Class=/Script/Engine.MaterialInstanceConstant Name="28_High_Velocity_Blood_Spatter_sfhuaivp_8K_inst"
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   ParameterStateId=8458A3B14CFE42B1F3BA0E965A91C21A
+   Parent=Material'"/Game/MS_Blood/Master_Materials/Decal_MasterMaterial.Decal_MasterMaterial"'
+   ScalarParameterValues(0)=(ParameterInfo=(Name="normal"),ParameterValue=1.000000)
+   ScalarParameterValues(1)=(ParameterInfo=(Name="albedo"),ParameterValue=1.000000)
+   ScalarParameterValues(2)=(ParameterInfo=(Name="opacity"),ParameterValue=1.000000)
+   ScalarParameterValues(3)=(ParameterInfo=(Name="roughness"),ParameterValue=1.000000)
+   TextureParameterValues(0)=(ParameterInfo=(Name="normal"),ParameterValue=Texture2D'"/Game/MS_Blood/Decal/28_High_Velocity_Blood_Spatter_sfhuaivp/sfhuaivp_8K_Normal.sfhuaivp_8K_Normal"',ExpressionGUID=E52235B6438377D830E468B3EAF07E4E)
+   TextureParameterValues(1)=(ParameterInfo=(Name="albedo"),ParameterValue=Texture2D'"/Game/MS_Blood/Decal/28_High_Velocity_Blood_Spatter_sfhuaivp/sfhuaivp_8K_Albedo.sfhuaivp_8K_Albedo"',ExpressionGUID=553AA57749546E785EBC5094FCE6913C)
+   TextureParameterValues(2)=(ParameterInfo=(Name="opacity"),ParameterValue=Texture2D'"/Game/MS_Blood/Decal/28_High_Velocity_Blood_Spatter_sfhuaivp/sfhuaivp_8K_Opacity.sfhuaivp_8K_Opacity"',ExpressionGUID=317D5CC14451F8CFD439658F0E514D82)
+   TextureParameterValues(3)=(ParameterInfo=(Name="roughness"),ParameterValue=Texture2D'"/Game/MS_Blood/Decal/28_High_Velocity_Blood_Spatter_sfhuaivp/sfhuaivp_8K_Roughness.sfhuaivp_8K_Roughness"',ExpressionGUID=31AEFD9F4DA0C7057A365292BCA801D0)
+   BasePropertyOverrides=(BlendMode=BLEND_Translucent,OpacityMaskClipValue=0.333300)
+   ReferencedTextureGuids(0)=FCAF066B4BEFC73E43A3C3956ABA692F
+   ReferencedTextureGuids(1)=D86B27904E78F05EFF99A8974C14F8DE
+   ReferencedTextureGuids(2)=C3BCA45B493E6A8725495D8E6261997C
+   ReferencedTextureGuids(3)=B8A77F6C432BCE89221697BF0727FBC2
+   ReferencedTextureGuids(4)=F9B8CB3649C9359BFD4FA98D8129E777
+   CachedReferencedTextures(0)=Texture2D'"/Engine/EngineMaterials/DefaultDiffuse.DefaultDiffuse"'
+   CachedReferencedTextures(1)=Texture2D'"/Engine/EngineMaterials/DefaultNormal.DefaultNormal"'
+   CachedReferencedTextures(2)=Texture2D'"/Engine/EngineMaterials/DefaultWhiteGrid.DefaultWhiteGrid"'
+   CachedReferencedTextures(3)=Texture2D'"/Engine/EngineMaterials/BlendFunc_DefBlend.BlendFunc_DefBlend"'
+   CachedReferencedTextures(4)=Texture2D'"/Engine/EngineMaterials/BlendFunc_DefBase.BlendFunc_DefBase"'
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=C056170B4171257206FEBF959F7CDEA1
+End Object
