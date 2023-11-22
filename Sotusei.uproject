@@ -3,6 +3,16 @@
 	"EngineAssociation": "4.27Chaos",
 	"Category": "",
 	"Description": "",
+	"Modules": [
+		{
+			"Name": "Sotusei",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
 	"Plugins": [
 		{
 			"Name": "FieldSystemPlugin",
