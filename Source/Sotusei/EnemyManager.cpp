@@ -2,36 +2,31 @@
 
 
 #include "EnemyManager.h"
-#include "MyWorldSettings.h"
+#include "Runtime/CoreUObject/Public/UObject/ConstructorHelpers.h"
 
-//UEnemyManager::UEnemyManager()
-//{
-//}
-//
-//bool UEnemyManager::ShouldCreateSubsystem(UObject* Outer) const
-//{
-//	if (!Super::ShouldCreateSubsystem(Outer))
-//	{
-//		return false;
-//	}
-//
-//	if (UWorld* WorldOuter = Cast<UWorld>(Outer))
-//	{
-//		if (AMyWorldSettings* MyWorldSettings = Cast<AMyWorldSettings>(WorldOuter->GetWorldSettings()))
-//		{
-//			return MyWorldSettings->bUseEnemyManager;
-//		}
-//	}
-//
-//	return false;
-//}
-//
-//void UEnemyManager::Initialize(FSubsystemCollectionBase& Collection)
-//{
-//	Super::Initialize(Collection);
-//}
-//
-//void UEnemyManager::Deinitialize()
-//{
-//	Super::Deinitialize();
-//}
+UEnemyManager::UEnemyManager()
+{
+	// 拡張用BPのクラス情報を検索・取得。パスの指定には注意
+    // .ini や プロジェクト設定でBPアセットのパスを設定できるようにしておくと親切
+	static ConstructorHelpers::FClassFinder<UEnemyManagerHelperBase> BluePrintFile(TEXT("/Game/Enemy/BP_EnemyManager"));
+	if (BluePrintFile.Class)
+	{
+		SubsystemHelperClass = (UClass*)BluePrintFile.Class;
+	}
+}
+
+void UEnemyManager::Initialize(FSubsystemCollectionBase& Collection)
+{
+	SubsystemHelper = nullptr;
+
+	if (SubsystemHelperClass)
+	{
+		// 拡張用BPを生成・設定
+		SubsystemHelper = NewObject<UEnemyManagerHelperBase>(GetTransientPackage(), SubsystemHelperClass);
+	}	
+}
+
+void UEnemyManager::Deinitialize()
+{
+	SubsystemHelper = nullptr;	
+}
