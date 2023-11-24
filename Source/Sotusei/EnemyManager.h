@@ -9,11 +9,24 @@
 /**
  * 
  */
+// 拡張用BPのベースとなるクラス
+UCLASS(Abstract, Blueprintable, MinimalAPI, meta = (ShowWorldContextPin))
+class SOTUSEI_API UEnemyManagerHelperBase : UObject
+{
+	GENERATED_BODY()
+};
+
+
 UCLASS()
 class SOTUSEI_API UEnemyManager : public UWorldSubsystem
 {
 	GENERATED_BODY()
 public:
+	// 拡張用BPのプロパティ
+	UPROPERTY(Transient, BlueprintReadWrite)
+	UEnemyManagerHelperBase* SubsystemHelper;
+
+	UFUNCTION(BlueprintCallable)
 
 	UEnemyManager();
 
