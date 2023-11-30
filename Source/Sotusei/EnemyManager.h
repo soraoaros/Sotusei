@@ -18,10 +18,10 @@ class UEnemyManagerHelperBase : public UObject
 public:
 	// ˆ—‚Ì’†g‚ÍBP‘¤‚Å‘‚­‚±‚Æ‚ğéŒ¾
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-	void GetSpawnParams(TArray<FTransform>& transforms, TArray<FName>& names, TArray<int32>& nums);
+	void GetSpawnParams(TArray<FTransform>& transforms, TArray<FName>& names, TArray<float>& nums);
 
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-	void AddSpawnParam(UPARAM(ref) FTransform& transform, UPARAM(ref) FName& name, UPARAM(ref) int32& num);
+	void AddSpawnParam(UPARAM(ref) FTransform& transform, UPARAM(ref) FName& name, UPARAM(ref) float& num);
 
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
 	void ClearSpawnParams();
