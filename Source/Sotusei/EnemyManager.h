@@ -24,7 +24,7 @@ public:
 
 	// パラメータ設定
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-	void SetSpawnParams(UPARAM(ref) TArray<FTransform>& transforms, UPARAM(ref) TArray<FName>& names, UPARAM(ref) TArray<float>& nums);
+	void SetSpawnParams(const TArray<FTransform>& transforms, const TArray<FName>& names, const TArray<float>& nums, const TArray<float>& spawnCD, const TArray<bool>& isPossible);
 
 
 	// パラメータ追加
@@ -39,7 +39,7 @@ public:
 
 	// クールダウン更新
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-	void UpdateSpawnCoolDown(UPARAM(ref) float& delta);
+	void UpdateSpawnCoolDown(const float& delta);
 };
 
 
