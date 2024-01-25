@@ -17,14 +17,29 @@ class UEnemyManagerHelperBase : public UObject
 
 public:
 	// 処理の中身はBP側で書くことを宣言
-	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-	void GetSpawnParams(TArray<FTransform>& transforms, TArray<FName>& names, TArray<float>& nums);
 
+	// パラメータ取得
+	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
+	void GetSpawnParams(TArray<FTransform>& transforms, TArray<FName>& names, TArray<float>& nums, TArray<float>& spawnCD, TArray<bool>& isPossible);
+
+	// パラメータ設定
+	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
+	void SetSpawnParams(UPARAM(ref) TArray<FTransform>& transforms, UPARAM(ref) TArray<FName>& names, UPARAM(ref) TArray<float>& nums);
+
+
+	// パラメータ追加
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
 	void AddSpawnParam(UPARAM(ref) FTransform& transform, UPARAM(ref) FName& name, UPARAM(ref) float& num);
 
+
+	// パラメータ全消去
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
 	void ClearSpawnParams();
+
+
+	// クールダウン更新
+	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
+	void UpdateSpawnCoolDown(UPARAM(ref) float& delta);
 };
 
 
