@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Sotusei.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{FB53AA51-5411-4ADA-84FC-D5C197AD5840}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Sotusei.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\SotuseiEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
+    <None Include="..\..\ググルドリベ.url" />
+    <None Include="..\..\スプシMk2.url" />
+    <None Include="..\..\仕様書.url" />
+    <None Include="..\..\卒業制作_仕様書.xlsx" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{6C06AB36-7EDF-4F57-A7BC-1A85F45EC66B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Sotusei">
+      <UniqueIdentifier>{C161EEDD-1D20-462A-8FEE-337808E58885}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Sotusei\EnemyManager.cpp">
+      <Filter>Source\Sotusei</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Sotusei\EnemyManager.h">
+      <Filter>Source\Sotusei</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\Sotusei\Sotusei.Build.cs">
+      <Filter>Source\Sotusei</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Sotusei\Sotusei.cpp">
+      <Filter>Source\Sotusei</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Sotusei\Sotusei.h">
+      <Filter>Source\Sotusei</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
